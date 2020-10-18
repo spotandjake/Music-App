@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- css -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/music-player.css">
+	<!-- js -->
+	<script src="js/music-player.js">
+
+	</script>
+	<!-- css dependencies -->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+	<!-- js dependencis -->
+	<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js">
+
+	</script>
+	<title>Youtube Music</title>
+</head>
+
+<body>
+	<div class="left split">
+		<div class="vertical-menu">
+			<h5 id="user" onclick="typeopen()">Sign In</h5>
+			<h5 id="home" class="active">Home</h5>
+			<h6 class="header">favourites</h6>
+			<h5 id="1">Link 1</h5>
+			<h5 id="2">Link 2</h5>
+			<h5 id="more">more</h5>
+			<h6 class="header">playlists</h6>
+			<h5 id="1">Link 1</h5>
+			<h5 id="2">Link 2</h5>
+			<h5 id="more">more</h5>
+			<h6 class="header">genres</h6>
+			<h5 id="1">Rock</h5>
+			<h5 id="2">Pop</h5>
+			<h5 id="more">more</h5>
+		</div>
+	</div>
+	</div>
+	<div class="right split">
+		<div class="top">
+			<input class="search" type="text" name="search" placeholder="Search.." onkeyup="search()">
+		</div>
+		<div class="results" id="results"></div>
+	<div class="bottom split">
+		<div class="music">
+			<audio crossorigin loop seekable autoplay preload="auto" id="media">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+	</div>
+	<!-- Login type -->
+	<div id="Logintype" class="Logintype">
+  	<!-- Login type -->
+  	<div class="Logintype-content">
+    	<span class="close">&times;</span>
+   		<h2>Choose An Account Type</h2>
+			<div class="row">
+  			<div class="col-md-4">
+    			<h1 class="btn btn-outline-dark" href="/users/googleauth" role="button" style="text-transform:none">
+      			<img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="img/Mail.png" />
+      			Login with Email
+    			</h1>
+  			</div>
+  			<div class="col-md-4">
+    			<h1 class="btn btn-outline-dark" href="/users/googleauth" role="button" style="text-transform:none" id="logingoogle">
+      			<img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+      			Login with Google
+    			</h1>
+  			</div>
+				<div class="col-md-4">
+    			<h1 class="btn btn-outline-dark" href="/users/googleauth" role="button" style="text-transform:none" id="logingit">
+      			<img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="img/Github.png" />
+      			Login with Github
+    			</h1>
+  			</div>
+			</div>
+		</div>
+	</div>
+	<!-- Js Dependencies -->
+  <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-firestore.js"></script>
+	<!-- js -->
+	<script src='js/login.js'></script>
+	<script src='js/firestore.js'></script>
+  <script src='js/script.js'></script>
+	<!-- Minified CSS and JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
+</body>
+</html>

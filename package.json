@@ -1,0 +1,27 @@
+{
+  "name": "Music-App",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "audio-decode": "^1.4.0",
+    "audio-lena": "^2.1.1",
+    "audio-loader": "^1.0.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "m3u8stream": "^0.6.4",
+    "node-lame": "^1.2.2",
+    "request": "^2.88.2",
+    "send-seekable": "^1.0.4",
+    "ytdl": "^1.1.0",
+    "ytdl-core": "^1.0.9",
+    "ytsr": "^0.1.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
